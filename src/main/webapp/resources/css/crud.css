@@ -1,0 +1,35 @@
+.ng-invalid {
+    border-color : red;
+}
+.ng-dirty {
+    border-color : red;
+}
+.ng-invalid.ng-dirty{
+    border-color : red;
+}
+
+.ng-valid.ng-dirty{
+    border-color : greenyellow;
+}
+.ppage[disabled]{
+    color: grey;
+}
+.npage[disabled]{
+    color: grey;
+}
+.nav-center {
+    text-align: center;
+    margin: 20px 25%;
+    width: 50%;
+}
+.nav-pills > li{
+    float:none;
+    display:inline-block;
+}
+form {
+    margin : 20px 5px;
+}
+.table {
+    width: 50%;
+    margin: auto;
+}
