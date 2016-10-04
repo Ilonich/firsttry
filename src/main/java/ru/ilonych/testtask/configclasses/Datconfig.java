@@ -24,15 +24,15 @@ import java.util.ResourceBundle;
 @EnableTransactionManagement
 public class Datconfig {
 
-    private static final String USER_NAME = "root";
-    private static final String USER_PASSWORD = "root";
+    private static final String USER_NAME = "postgres";
+    private static final String USER_PASSWORD = "admin";
     //_______________________________________________________________\DB NAME/__https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-reference-configuration-properties.html
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&connectionCollation=utf8_unicode_ci&characterSetResults=utf8";
+    private static final String JDBC_URL = "jdbc:postgresql://localhost:5432/crud";
 
     @Bean
     public DataSource dataSource(){
         BasicDataSource dataSource = new BasicDataSource();
-        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUrl(JDBC_URL);
         dataSource.setUsername(USER_NAME);
         dataSource.setPassword(USER_PASSWORD);

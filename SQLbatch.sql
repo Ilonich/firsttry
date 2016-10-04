@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS User(
 	age INT(3),
 	isAdmin BIT(1),
 	createdDate TIMESTAMP
-) DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+);
 
 INSERT INTO User (id, name, age, isAdmin, createdDate) VALUES
 (NULL, 'Nikko', '26',  b'1', '2014-05-08 12:12:12'),
